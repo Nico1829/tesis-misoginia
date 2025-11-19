@@ -1,0 +1,8 @@
+              precision    recall  f1-score   support
+
+No Misoginia       0.90      0.85      0.88      3366
+   Misoginia       0.61      0.72      0.66      1083
+
+    accuracy                           0.82      4449
+   macro avg       0.76      0.78      0.77      4449
+weighted avg       0.83      0.82      0.82      4449
