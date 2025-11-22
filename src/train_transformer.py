@@ -102,7 +102,7 @@ def main():
         per_device_eval_batch_size=max(2 * args.batch_size, 16),
         num_train_epochs=args.epochs,
         weight_decay=args.weight_decay,
-        evaluation_strategy="epoch",
+        eval_strategy="epoch",   # 👈 CORREGIDO
         save_strategy="epoch",
         logging_strategy="steps",
         logging_steps=50,
@@ -111,7 +111,7 @@ def main():
         seed=args.seed,
         fp16=use_fp16,
         gradient_accumulation_steps=1,
-        report_to=[]  # sin WandB por defecto
+        report_to=[]
     )
 
     trainer = Trainer(
