@@ -5,7 +5,7 @@ py -3.12 -m venv .venv
 call .\.venv\Scripts\activate.bat
 python -m pip install --upgrade pip
 
-# 3) Instalar lo que necesitas
+# 3) Instalar 
 pip install -r requirements.txt
 
 # 4)Ejecutar
